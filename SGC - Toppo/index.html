@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1">
+
+		<title>SGC - Toppo</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	</head>
+
+	<body>
+		
+		<body>
+
+		  <nav id="menusao" class="navbar navbar-default navbar-static-top">
+		    <div class="container">
+		      <div class="navbar-header">
+		        <button id="butaum" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+		          <span class="sr-only">Toggle navigation</span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		        </button>
+		        <a id="logo-sgc" class="navbar-brand" href="#">SGC</a>
+		        <a id="logo-sis"class="navbar-brand" href="#">Sistema de Gestão de Carreiras</a>
+		      </div>
+		      <div id="navbar" class="navbar-collapse collapse">
+		        <ul class="nav navbar-nav">
+		          <li><a id="me-ma" href="#about">Manual</a></li>
+		          <li><a id="me-em" href="html/contato.html">Entre em Contato Conosco</a></li>
+		        </ul>
+		      </div>
+		    </div>
+		  </nav>
+
+		  <main>
+		  		<section class="container" id="loggin">
+			<h2 id="falogin">Faça login no sistema!</h2>
+			<p id="falogin">Digite suas credenciais</p>
+
+			<form>
+				<label for="log-cpf">CPF:</label>
+				<input class="form-control" id="log-cpf" type="text" placeholder="Digite seu CPF">
+				
+				<label for="log-senha">Senha:</label>
+				<input class="form-control" id="log-senha" type="text"  placeholder="Digite sua senha">
+				
+				
+				<input class="btn btn-primary" value="Entrar" onClick="loggando()">
+				<input class="btn btn-primary" value="Esqueci minha Senha" onClick="esqueceu()">
+
+
+			</form>
+		</section>
+
+
+
+		  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<footer>
+				<p><strong>Grupo Toppo - FIAP - Challenge 2020 B2W</strong></p>
+		</footer>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+		</script>
+		<script src="jquery.js"></script>	
+		<script src="js/bootstrap.min.js"></script>	
+		<script type="text/javascript">
+			function loggando()
+			{
+					location.href="html/logado.html"
+			}
+		</script>
+		<script type="text/javascript">
+			function esqueceu()
+			{
+					location.href="html/recupera.html"
+			}
+		</script>
+	
+	</body>
+
+</html>
